@@ -1,63 +1,184 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Renk Öğren – Say | Gizlilik Politikası</title>
-<style>
-    body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: auto; }
-    h1 { color: #333; }
-    a { color: #0077cc; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Part Apps - Mobil oyunlar ve uygulamalar">
+    <title>Part Apps - Mobil Oyunlar ve Uygulamalar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1e293b;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #3b82f6;
+            border-radius: 4px;
+        }
+        
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Gradient background */
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #2563eb 100%);
+        }
+        
+        /* Card hover effect */
+        .app-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .app-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(59, 130, 246, 0.3);
+        }
+    </style>
 </head>
-<body>
+<body class="bg-slate-900 text-gray-100">
+    
+    <!-- Header -->
+    <header class="gradient-bg shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
+                        <span class="text-blue-600 font-bold text-xl">P</span>
+                    </div>
+                    <h1 class="text-2xl md:text-3xl font-bold text-white">Part Apps</h1>
+                </div>
+                <nav class="hidden md:flex space-x-6">
+                    <a href="#about" class="text-white hover:text-blue-200 transition">Hakkımızda</a>
+                    <a href="#apps" class="text-white hover:text-blue-200 transition">Uygulamalar</a>
+                    <a href="#contact" class="text-white hover:text-blue-200 transition">İletişim</a>
+                </nav>
+            </div>
+        </div>
+    </header>
 
-<h1>Gizlilik Politikası</h1>
-<p><strong>Renk Öğren – Say</strong> uygulaması, çocukların renkleri ve sayıları öğrenmesini sağlayan çevrimdışı bir mobil oyundur. Kullanıcı gizliliği bizim için önemlidir. Bu nedenle uygulama, kişisel veri toplamadan çalışacak şekilde tasarlanmıştır.</p>
+    <!-- Hero Section -->
+    <section class="gradient-bg py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+                Mobil Deneyimleriniz İçin Buradayız
+            </h2>
+            <p class="text-xl text-blue-100 max-w-2xl mx-auto mb-8">
+                Mobil platformlarda oyunlar ve uygulamalar geliştiriyoruz. Kullanıcılarımıza anlamlı ve keyifli deneyimler sunmayı amaçlıyoruz.
+            </p>
+            <a href="https://play.google.com/store/apps/dev?id=YOUR_DEVELOPER_ID" 
+               target="_blank"
+               class="inline-flex items-center space-x-2 bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition shadow-lg">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
+                </svg>
+                <span>Google Play'de Görüntüle</span>
+            </a>
+        </div>
+    </section>
 
-<h2>Ebeveyn Onayı</h2>
-<p>Uygulama çocuklar için tasarlanmış olup, ebeveyn gözetiminde kullanılması önerilir.</p>
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-slate-800">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h3 class="text-3xl font-bold text-white mb-6">Hakkımızda</h3>
+                <p class="text-gray-300 text-lg leading-relaxed">
+                    Part Apps olarak, kullanıcı deneyimini ön planda tutan, yenilikçi ve kaliteli mobil uygulamalar geliştiriyoruz. 
+                    Her projemizde kullanıcılarımızın geri bildirimlerini dikkate alıyor ve sürekli gelişim ilkesiyle hareket ediyoruz.
+                </p>
+            </div>
+        </div>
+    </section>
 
-<h2>Toplanan Veri</h2>
-<p>Uygulama herhangi bir kişisel veri <strong>toplamaz</strong>, <strong>işlemez</strong> ve <strong>paylaşmaz</strong>.</p>
-<ul>
-    <li>İsim, e-posta, konum, cihaz kimliği gibi bilgiler toplanmaz.</li>
-    <li>Çocuklara ait hiçbir veri tutulmaz.</li>
-    <li>Uygulama tamamen çevrimdışı çalışır.</li>
-</ul>
+    <!-- Apps Section -->
+    <section id="apps" class="py-16 bg-slate-900">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-white text-center mb-12">Uygulamalarımız</h3>
+            
+            <!-- Buraya uygulama kartlarını ekleyeceksin -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                
+                <!-- Örnek Uygulama Kartı - Bunu kopyalayarak kullanabilirsin -->
+                <!-- 
+                <div class="app-card bg-slate-800 rounded-xl overflow-hidden shadow-xl">
+                    <div class="h-48 bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center">
+                        <span class="text-white text-6xl">🎮</span>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold text-white mb-2">Uygulama Adı</h4>
+                        <p class="text-gray-400 mb-4">Kısa açıklama buraya gelecek.</p>
+                        <a href="#" class="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+                            İndir
+                        </a>
+                    </div>
+                </div>
+                -->
+                
+                <!-- Henüz uygulama yok mesajı -->
+                <div class="col-span-full text-center py-12">
+                    <div class="inline-block p-8 bg-slate-800 rounded-xl">
+                        <svg class="w-16 h-16 text-blue-500 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                        </svg>
+                        <p class="text-gray-400 text-lg">Yakında yeni uygulamalarımızla burada olacağız!</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
 
-<h2>Reklamlar</h2>
-<p>Uygulamada yalnızca Google tarafından sağlanan reklamlar bulunmaktadır:</p>
-<ul>
-    <li>Ekranın altında <strong>banner reklam</strong></li>
-    <li>Serbest modda her 4 oyunda bir <strong>geçiş (interstitial) reklamı</strong></li>
-</ul>
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-slate-800">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl mx-auto">
+                <h3 class="text-3xl font-bold text-white text-center mb-4">İletişim</h3>
+                <p class="text-gray-400 text-center mb-8">
+                    Görüş, öneri veya şikayetleriniz için aşağıdaki formu doldurabilirsiniz.
+                </p>
+                
+                <!-- Google Forms Embed -->
+                <div class="bg-slate-900 rounded-xl p-6 shadow-xl">
+                    <!-- Form embed alanı -->
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfh6I8Sh7hpzZxee8uhbWAl37p_TORvGxAks2iTGaQ_bnEEzQ/viewform?embedded=true" width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Yükleniyor…</iframe>
 
-<p>Bu reklamlar Google'ın kendi sistemleri üzerinden sunulur ve geliştirici olarak hiçbir kullanıcı verisine erişmeyiz. Reklamlar Google’ın aşağıdaki politikalarına göre gösterilir:</p>
-<p><a href="https://policies.google.com/technologies/ads" target="_blank">Google Reklam Politikaları</a></p>
-<p>Reklamlar, Google'ın çocuklara yönelik içerik politikalarına uygun olarak yapılandırılmıştır (COPPA uyumlu).</p>
+                </div>
+                
+                <!-- Alternatif: Email -->
+                <div class="text-center mt-8">
+                    <p class="text-gray-400">
+                        Veya direkt email ile: 
+                        <a href="mailto:partindere@gmail.com" class="text-blue-400 hover:text-blue-300">
+                            partindere@gmail.com
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<h2>Üçüncü Taraf Hizmetleri</h2>
-<p>Uygulama, yalnızca Google’ın reklam hizmetlerini kullanır. Bunun dışında başka hiçbir üçüncü taraf servisi veya analiz aracı yoktur.</p>
-
-<h2>Çocukların Gizliliği</h2>
-<p>Uygulama 3–7 yaş arası çocuklar için tasarlanmıştır ve çocuklardan herhangi bir kişisel veri toplamamaktadır. Çocuklara ait hiçbir bilgi kaydedilmez veya üçüncü taraflarla paylaşılmaz.</p>
-
-<h2>Çevrimdışı Çalışma</h2>
-<p>Oyun tamamen çevrimdışı oynanabilir. İnternet sadece reklamların yüklenmesi için kullanılabilir. Reklamlar dışında internet bağlantısı gerektirmez.</p>
-
-<h2>Güvenlik</h2>
-<p>Uygulama kullanıcı verisi toplamadığı için veri saklama veya işleme süreçleri bulunmamaktadır.</p>
-
-<h2>Politika Değişiklikleri</h2>
-<p>Gizlilik politikası gerektiğinde güncellenebilir. Güncellemeler bu sayfa üzerinden yayınlanır.</p>
-
-<h2>İletişim</h2>
-<p>Herhangi bir sorunuz varsa bize e-posta ile ulaşabilirsiniz:</p>
-<p><strong><a href="mailto:canxmcclynd1@gmail.com">✉ canxmcclynd1@gmail.com</a></strong></p>
-
-<hr>
-<p>Son güncelleme tarihi: 04.12.2025</p>
+    <!-- Footer -->
+    <footer class="bg-slate-900 border-t border-slate-700 py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-400">
+                © 2025 Part Apps. Tüm hakları saklıdır.
+            </p>
+            <div class="mt-4 space-x-4">
+                <a href="mailto:partindere@gmail.com" class="text-gray-400 hover:text-blue-400 transition">
+                    Email
+                </a>
+                <span class="text-gray-600">|</span>
+                <a href="https://play.google.com/store/apps/dev?id=YOUR_DEVELOPER_ID" 
+                   target="_blank"
+                   class="text-gray-400 hover:text-blue-400 transition">
+                    Google Play
+                </a>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
